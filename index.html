@@ -4,39 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Website</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- To support includes -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script> 
+    $(function () {
+    var includes = $('[data-include]')
+    $.each(includes, function () {
+        var file = 'items/' + $(this).data('include') + '.html'
+        $(this).load(file)
+    })
+    })
+    </script> 
+
+    <!-- To support latex formatting -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
 
 </head>
 <body>
-    <h1>HTML/CSS Basics</h1>
+    <h1>Tyler Smith</h1>
+    
+    <div data-include="two-opt-traveling-salesperson"></div>
+    <div data-include="a-star"></div>
 
-    <p>This is my first real attempt at doing web development.</p>
-
-    <h2>Text Formatting</h2>
-    <p><strong>Bold</strong></p>
-    <p><em>Italic</em></p>
-    <p><u>Underline</u></p>
-
-    <h2>A Link?</h2>
-    <a href="https://www.google.com"><p>Google</p></a>
-    <img width="300" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-google-icon-logo-png-transparent-svg-vector-bie-supply-14.png"/>
-
-    <h2>Lists</h2>
-    <p>Lists are typically unordered</p>
-    <h3>Unordered</h3>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-    </ul>
-    <h3>Ordered</h3>
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-    </ol>
-
-    <h2>Buttons</h2>
-    <button>I'm a button!</button><br>
 
 </body>
 </html>

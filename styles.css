@@ -5,22 +5,51 @@ body {
 }
 h1 {
     /* background: black; */
-    color: rgb(86, 178, 240)
+    color: rgb(86, 178, 240);
+    text-align: center;
 }
 h2 {
     color: rgb(115, 192, 243);
-    opacity: 0.5;
+    text-align: center;
 }
-button {
-    background: gray;
-    border: none;
-    color:white;
-    border-radius: 5px;
+
+/* img {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
-a {
-    font-size:20px;
-    color:rgb(108, 136, 215)
+
+p {
+    text-indent: 40px;
+} */
+
+.item {
+    display: flex;
+    justify-content: center;
 }
-a:visited {
-    color:rgb(165, 125, 183)
+
+.item .image {
+    width: 100%;
+    background: red;
 }
+
+img {
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.item .description {
+    background: rgb(80, 80, 80);
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* .item .description p {
+    width: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+} */
