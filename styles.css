@@ -25,6 +25,7 @@ p {
 
 .item {
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -53,3 +54,9 @@ img {
     margin-left: 2.5%;
     margin-right: 2.5%;
 } */
+
+@media screen and (max-width: 800px) {
+    .item {
+        flex-direction: column;
+    }
+}
