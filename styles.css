@@ -1,27 +1,32 @@
 body {
     background: rgb(53, 53, 53);
     color: rgb(197, 197, 197);
-    font-family: Helvetica, sans-serif
+    font-family: Helvetica, sans-serif;
 }
 h1 {
-    /* background: black; */
     color: rgb(86, 178, 240);
     text-align: center;
+    font-size: 64px;
 }
+
 h2 {
     color: rgb(115, 192, 243);
     text-align: center;
-}
-
-/* img {
-    width: 45%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    font-size: 56px;
 }
 
 p {
-    text-indent: 40px;
-} */
+    font-size: 28px;
+}
+
+a {
+    color: RGB(126, 186, 246);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 .item {
     display: flex;
@@ -34,7 +39,7 @@ p {
     background: red;
 }
 
-img {
+video {
     width: 45%;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -51,21 +56,18 @@ img {
     margin-left: 2.5%;
     margin-right: 2.5%;
     margin-top: 10px;
-    padding-top: 1px;
-    padding-left: 5px;
-    padding-right: 5px;
-    /* padding-top: 1%; */
-    /* padding: 5px 10px 5px 10px; */
-    /* padding: 1px 1px 1px 1px; */
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 10px;
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1450px) {
     .item {
         flex-direction: column;
     }
 
-    img {
+    video {
         width: 90%;
     }
 
