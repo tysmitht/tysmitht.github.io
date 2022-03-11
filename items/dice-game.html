@@ -15,7 +15,32 @@
         </div>
         <div class="desc-box">
             <p>
-                description
+                This is based on a fun dice game. Each player
+                has two scores, initially set to zero. Let's
+                call them the current score and banked score. 
+                On their turn, they roll a single die as many 
+                times as they want, each time adding the 
+                rolled value to their current score. Instead
+                of rolling, they may bank their points in which
+                case their current score is added to their banked 
+                score and their turn ends. However, if they roll
+                a one, their turn ends without adding to their
+                banked score.
+            </p>
+            <p>
+                What is a good strategy? One strategy is the
+                player continue to roll until they reach some
+                pre-defined goal. If they reach it (or exceed it),
+                they end their turn. If not, roll again.
+            </p>
+            <p>
+                If your goal is too low, you will not earn enough
+                points in a turn. If your goal is too high, it is
+                unlikely you will earn any points in a turn. You 
+                could do some analysis to determine the optimal score
+                or you could simulate it like I did. The blue bars are
+                the current evaluation. The orange dots are the true 
+                values.
             </p>
         </div>
     </div>

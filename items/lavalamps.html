@@ -15,7 +15,25 @@
         </div>
         <div class="desc-box">
             <p>
-                description
+                I wanted to make myself an animated desktop
+                wallpaper so I went with lava lamps. According
+                to my research, the best way to draw the orbs
+                in a lava lamp is by using the iso-surface
+                algorithm.
+            </p>
+            <p>
+                The complication is the iso-surface algorithm
+                is, computationally, very expensive. For every
+                frame of animation, you have to loop over each
+                pixel and for each pixel you have to loop over
+                2d iso-ball and do an expensive square root and
+                division.
+            </p>
+            <p>
+                The naive implementation ran at around 0.1 frames
+                per second (FPS). Most of my work on this project
+                was about speeding it up where it was eventually 
+                capable of running at around 150 FPS, a 1500x speedup.
             </p>
         </div>
     </div>

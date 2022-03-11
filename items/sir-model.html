@@ -1,4 +1,4 @@
-<h2>Sir Model</h2>
+<h2>SIR Model</h2>
 <div class="item">
     <video autoplay loop muted>
         <source src="clips/sir-model.mp4" type="video/mp4">
@@ -15,7 +15,30 @@
         </div>
         <div class="desc-box">
             <p>
-                description
+                For modeling disease spread, the SIR model is
+                a purposefully simple model. Let $S$ (blue) be the percentage 
+                of people currently susceptible to a virus. Let $I$ (red)
+                be the percentage infected and let $R$ (green) be the percentage
+                that has recovered (or died). $\alpha$ and $\beta$ are
+                constants indicating the transmission and recovery rates
+                of the disease. $I$ is initially small. This assumes that
+                once someone recovers, they are permanently immune.
+            </p>
+            <p>
+                This model uses a set of differential equations to
+                model the spread of this disease, namely
+                $$
+                \begin{align*}
+                S' &= -\alpha SI \\
+                I' &= \alpha SI - \beta I \\
+                R' &= \beta I \\
+                \end{align*}
+                $$
+            </p>
+            <p>
+                I solved this with, what I now know, is Euler's method.
+                If I did this again, I would use a better, more
+                acurate method, like Runge-Kutta.
             </p>
         </div>
     </div>
