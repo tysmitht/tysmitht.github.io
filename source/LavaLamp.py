@@ -277,7 +277,7 @@ class Lamp:
     def draw_canister_helper(screen_array, wax_color, canister_y_range, canister_ranges,
                              metaball_data, uniform_box_size, threshold, offset_x, offset_y):
         """
-        Holy hell is this a fucking mess. This is why god created comments and functions.
+        Holy hell is this a mess. Good luck future me.
         Args:
             screen_array: The pixel array for the screen
             wax_color: The color this will be applying to the screen
