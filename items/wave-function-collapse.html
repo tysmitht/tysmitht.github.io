@@ -1,0 +1,42 @@
+<h2>Wave Function Collapse</h2>
+<div class="item">
+    <video autoplay loop muted>
+        <source src="clips/wave_function_collapse.mp4" type="video/mp4">
+    </video>
+
+    <div class="description">
+        <div class="desc-box">
+            <p>
+                Date Created: 7/3/2022
+            </p>
+            <p>
+                Code: <a href="https://github.com/tysmitht/tysmitht.github.io/blob/main/source/WaveFunctionCollapse.py">Github</a>
+            </p>
+        </div>
+        <div class="desc-box">
+            <p>
+                The wave function collapse algorithm can be applied to a
+                wide variety of applications. It can be used to solve
+                <em>Sudoku</em> or <em>Minesweeper</em> but a common
+                application is procedural graphics generation. My implementation 
+                uses the algorithm to generate images of circuit boards that 
+                look like the demo, completely randomly.
+            </p>
+            <p>
+                The idea behind the algorithm is, initially, each of the tile
+                slots can be any of the possible tiles so each slot is a
+                superposition of tiles. To start, one tile is randomly chosen,
+                then that tile is 'collapsed' wherein it's tile is chosen from
+                each of its possible options.
+            </p>
+            <p>
+                When that tile is placed, it limits the options of nearby tiles,
+                which reduces the entropy of those tiles. At each step, a slot
+                with the minimum entropy is chosen and it is collapsed in
+                the same fashion. Some backtracking is needed in case an impossible
+                situation is reached.
+            </p>
+        </div>
+    </div>
+</div>
+
